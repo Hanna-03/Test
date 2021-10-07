@@ -21,9 +21,6 @@ namespace DataLib.Modell
 
         [BsonElement("Password")]
         public string Password { get; set; }
-        
-        [BsonElement("Organisation")]
-        public string Organisation { get; set; }
 
     }
 }

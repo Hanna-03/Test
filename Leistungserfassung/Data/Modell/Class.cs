@@ -14,10 +14,13 @@ namespace DataLib.Modell
         [BsonElement("Name")]
         public string Name { get; set; }
 
-        [BsonElement("Trainees")]
-        public List<Guid> Trainees { get; set; }
+        [BsonElement("TraineeIds")]
+        public List<Guid> TraineeIds { get; set; }
 
-        [BsonElement("ClassTeacher")]
-        public Guid ClassTeacher { get; set; }
+        [BsonElement("ClassInstructorId")]
+        public Guid ClassInstructorId { get; set; }
+
+        [BsonElement("CourseIds")]
+        public List<Guid> CourseIds { get; set; }
     }
 }

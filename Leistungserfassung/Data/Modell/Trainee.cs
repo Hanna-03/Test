@@ -1,13 +1,11 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 
 namespace DataLib.Modell
 {
     public class Trainee : User
     {
-        [BsonElement("Group")]
-        public string Group { get; set; }
-
-        [BsonElement("Job")]
-        public string Job { get; set; }
+        [BsonElement("ClassId")]
+        public Guid ClassId { get; set; }
     }
 }

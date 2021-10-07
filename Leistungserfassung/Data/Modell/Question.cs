@@ -17,8 +17,8 @@ namespace DataLib.Modell
         [BsonElement("TeacherId")]
         public Guid TeacherId { get; set; }
 
-        [BsonElement("ClassesIds")]
-        public List<Guid> ClassesIds { get; set; }
+        [BsonElement("ClassIds")]
+        public List<Guid> ClassIds { get; set; }
 
         [BsonElement("FalseAnswers")]
         public List<string> FalseAnswers { get; set; }
@@ -27,13 +27,13 @@ namespace DataLib.Modell
         public List<string> TrueAnswers { get; set; }
 
         [BsonElement("Category")]
-        public int Category { get; set; }
-
-        [BsonElement("AnswerMode")]
-        public int AnswerMode { get; set; }
+        public string Category { get; set; }
 
         [BsonElement("CourseId")]
         public Guid CourseId { get; set; }
+
+        [BsonElement("Points")]
+        public double Points { get; set; }
 
     }
 }

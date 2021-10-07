@@ -14,16 +14,16 @@ namespace DataLib.Modell
         [BsonElement("TestId")]
         public Guid TestId { get; set; }
 
-        [BsonElement("TeacherId")]
-        public Guid TeacherId { get; set; }
+        [BsonElement("InstructorId")]
+        public Guid InstructorId { get; set; }
 
         [BsonElement("TraineeId")]
         public Guid TraineeId { get; set; }
 
-        [BsonElement("Mark")]
-        public double Mark { get; set; }
+        [BsonElement("Points")]
+        public double Points { get; set; }
 
-        [BsonElement("Comments")]
-        public List<string> Comments { get; set; }
+        [BsonElement("MaxPoints")]
+        public double MaxPoints { get; set; }
     }
 }
