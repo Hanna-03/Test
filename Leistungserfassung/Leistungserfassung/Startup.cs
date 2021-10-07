@@ -1,9 +1,13 @@
+using DataLib.Modell;
+using Leistungserfassung.Controllers;
+using Leistungserfassung.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
 namespace Leistungserfassung
 {
@@ -19,6 +23,14 @@ namespace Leistungserfassung
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //services.Configure<TraineeDatabaseSettings>(Configuration.GetSection(nameof(TraineeDatabaseSettings)));
+            //services.AddSingleton<ITraineeDatabaseSettings>(sp =>
+            //    sp.GetRequiredService<IOptions<TraineeDatabaseSettings>>().Value);
+            services.AddSingleton<DBService<Trainee>>();
+            services.AddSingleton<DBService<Question>>();
+            services.AddSingleton<DBService<Test>>();
+            services.AddSingleton<DBService<Result>>();
 
             services.AddControllersWithViews();
 

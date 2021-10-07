@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace DataLib.Modell
 {
-    public class Test
+    public class Test : IModel
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
+        [BsonElement("Id")]
         public Guid Id { get; set; }
 
         [BsonElement("Thema")]

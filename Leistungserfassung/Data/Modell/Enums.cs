@@ -12,9 +12,6 @@
             SK,
             Wil,
             DK,
-            Ethik,
-            Sport,
-            DaZ,
 
             None = 0
         }

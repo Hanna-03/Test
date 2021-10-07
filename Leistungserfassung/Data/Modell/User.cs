@@ -4,20 +4,17 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace DataLib.Modell
 {
-    public abstract class User
+    public abstract class User : IModel
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
+        [BsonElement("_id")]
         public Guid Id { get; set; }
 
-        [BsonElement("FirstName")]
+        [BsonElement("Firstname")]
         public string Firstname { get; set; }
 
-        [BsonElement("LastName")]
-        public string LastName { get; set; }
-
-        [BsonElement("BirthDate")]
-        public DateTime BirthDate { get; set; }
+        [BsonElement("Lastname")]
+        public string Lastname { get; set; }
 
         [BsonElement("Nickname")]
         public string Nickname { get; set; }
