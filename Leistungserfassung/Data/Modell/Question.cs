@@ -8,14 +8,14 @@ namespace DataLib.Modell
     public class Question : IModel
     {
         [BsonId]
-        [BsonElement("Id")]
+        [BsonElement("_id")]
         public Guid Id { get; set; }
 
         [BsonElement("Quelle")]
         public string Quelle { get; set; }
 
-        [BsonElement("TeacherId")]
-        public Guid TeacherId { get; set; }
+        [BsonElement("InstructorId")]
+        public Guid InstructorId { get; set; }
 
         [BsonElement("ClassIds")]
         public List<Guid> ClassIds { get; set; }

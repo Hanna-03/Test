@@ -9,7 +9,7 @@ namespace DataLib.Modell
         [BsonElement("CourseIds")]
         public List<Guid> CourseIds { get; set; }
 
-        [BsonElement("ClasseIds")]
-        public List<Guid> ClasseIds { get; set; }
+        [BsonElement("ClassIds")]
+        public List<Guid> ClassIds { get; set; }
     }
 }

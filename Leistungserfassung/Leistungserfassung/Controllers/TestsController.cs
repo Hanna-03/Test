@@ -39,7 +39,7 @@ namespace Leistungserfassung.Controllers
         {
             _testService.Create(test);
 
-            return CreatedAtRoute("GetBook", new { id = test.Id.ToString() }, test);
+            return CreatedAtRoute("GetTest", new { id = test.Id.ToString() }, test);
         }
 
         [HttpPut("{id:length(24)}")]

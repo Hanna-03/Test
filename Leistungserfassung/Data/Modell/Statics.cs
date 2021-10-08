@@ -8,6 +8,9 @@
         public const string QuestionCollection = "QuestionCollection";
         public const string TestCollection = "TestCollection";
         public const string ResultCollection = "ResultCollection";
+        public const string InstructorCollection = "InstructorCollection";
+        public const string ClassCollection = "ClassCollection";
+        public const string CourseCollection = "CourseCollection";
 
         public static string GetCollectionString(string _objname)
         {
@@ -21,6 +24,12 @@
                     return TestCollection;
                 case "Result":
                     return ResultCollection;
+                case "Instructor":
+                    return InstructorCollection;
+                case "Class":
+                    return ClassCollection;
+                case "Course":
+                    return CourseCollection;
                 default:
                     return string.Empty;
             }

@@ -31,6 +31,9 @@ namespace Leistungserfassung
             services.AddSingleton<DBService<Question>>();
             services.AddSingleton<DBService<Test>>();
             services.AddSingleton<DBService<Result>>();
+            services.AddSingleton<DBService<Instructor>>();
+            services.AddSingleton<DBService<Class>>();
+            services.AddSingleton<DBService<Course>>();
 
             services.AddControllersWithViews();
 

@@ -8,7 +8,7 @@ namespace DataLib.Modell
     public class Result : IModel
     {
         [BsonId]
-        [BsonElement("Id")]
+        [BsonElement("_id")]
         public Guid Id { get; set; }
 
         [BsonElement("TestId")]
